@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craneo Gaming | Oficial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- NAVEGACIÓN -->
+    <header class="header-gaming">
+        <div class="logo">
+            <h1>💀 Craneo Gaming</h1>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#directo">Próximo Directo</a></li>
+                <li><a href="#videos">Último Video</a></li>
+                <li><a href="#gpx">Clan GPX</a></li>
+                <li><a href="#reclutamiento" class="btn-unirse">Únete a GPX</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION (Banner principal) -->
+    <section id="inicio" class="hero-canal">
+        <div class="hero-contenido">
+            <h2>Hola, soy Craneo Gaming 💀</h2>
+            <p class="hero-descripcion">
+                Creador de contenido enfocado en <strong>Roblox Rivals</strong>. Si buscas gameplays frenéticos, estrategias, loadouts rotos y todo sobre el mejor shooter competitivo de Roblox, estás en el lugar correcto.
+            </p>
+            <div class="hero-estadisticas">
+                <span class="badge-neon">🎯 Especialista en Shooter</span>
+                <span class="badge-neon">🚀 +150 Subs Reales</span>
+            </div>
+            <a href="https://www.youtube.com/@new-craneo-gaming" target="_blank" class="btn-yt">Ir al Canal 📺</a>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: CONTADOR REGRESIVO PARA EL DIRECTO -->
+    <section id="directo" class="seccion-contador">
+        <div class="contenedor">
+            <h2 class="titulo">🔴 Próximo Directo en Vivo</h2>
+            <p class="subtitulo">Nos vemos en YouTube todos los domingos a las 12:00 PM (CDMX)</p>
+            
+            <div class="contador-grid">
+                <div class="caja-tiempo">
+                    <span id="dias">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="caja-tiempo">
+                    <span id="horas">00</span>
+                    <p>Horas</p>
+                </div>
+                <div class="caja-tiempo">
+                    <span id="minutos">00</span>
+                    <p>Minutos</p>
+                </div>
+                <div class="caja-tiempo">
+                    <span id="segundos">00</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+
+            <a href="https://www.youtube.com/@new-craneo-gaming" target="_blank" class="btn-directo">Activar Recordatorio 🔔</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: ÚLTIMO VIDEO -->
+    <section id="videos" class="seccion-video">
+        <div class="contenedor">
+            <h2 class="titulo">Último Video</h2>
+            <p class="subtitulo">¡Checa lo más reciente del canal y no olvides dejar tu like!</p>
+            
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sYQp9O58nWU?si=3svxuISvalm0rt8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CLAN GPX -->
+    <section id="gpx" class="seccion-clan">
+        <div class="contenedor">
+            <h2 class="titulo">El Clan: GPX</h2>
+            <p class="descripcion-clan">
+                Dominando las partidas en Roblox Rivals. Si buscas un equipo competitivo, organizado y con verificación en Discord, este es tu lugar.
+            </p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>🏆 Competitivo</h3>
+                    <p>Entrenamos puntería y estrategias de loadout (Guadaña, Fusil, Minas).</p>
+                </div>
+                <div class="stat-card">
+                    <h3>🤖 Automatizado</h3>
+                    <p>Contamos con bots propios en Discord para la gestión y verificación.</p>
+                </div>
+                <div class="stat-card">
+                    <h3>🤝 Comunidad</h3>
+                    <p>Jugadores activos, torneos internos y buen ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE RECLUTAMIENTO -->
+    <section id="reclutamiento" class="seccion-formulario">
+        <div class="contenedor">
+            <h2 class="titulo">Solicitud de Ingreso a GPX</h2>
+            <p class="subtitulo">Completa este formulario. Los datos se enviarán a nuestra base de datos para ser revisados por los administradores.</p>
+            
+            <form class="form-gpx" id="form-solicitud">
+                <div class="grupo-input">
+                    <label for="roblox_user">Usuario de Roblox:</label>
+                    <input type="text" id="roblox_user" name="roblox_user" placeholder="Ej: CraneoPro123" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="discord_user">Usuario de Discord:</label>
+                    <input type="text" id="discord_user" name="discord_user" placeholder="Ej: nayar#0000" required>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="loadout">Loadout Principal en Rivals:</label>
+                    <select id="loadout" name="loadout" required>
+                        <option value="">Selecciona tu estilo...</option>
+                        <option value="asalto">Fusil de asalto + Pistolas de energía</option>
+                        <option value="francotirador">Francotirador</option>
+                        <option value="agresivo">Shorty + Guadaña</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="motivo">¿Por qué quieres unirte a GPX?</label>
+                    <textarea id="motivo" name="motivo" rows="4" placeholder="Cuéntanos sobre tu nivel, si usas Aimlabs, etc..." required></textarea>
+                </div>
+
+                <div class="grupo-input">
+                    <label for="rivals_photo">Foto / Captura de tu Perfil en Rivals:</label>
+                    <input type="file" id="rivals_photo" name="rivals_photo" accept="image/*" required>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitud 🚀</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Craneo Gaming & GPX Clan. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT DEL CONTADOR REGRESIVO (DOMINGOS 12:00 PM) -->
+    <script>
+        function calcularProximoDomingo() {
+            const ahora = new Date();
+            const proximoDomingo = new Date();
+            
+            let diasHastaDomingo = (7 - ahora.getDay()) % 7;
+            
+            // Si hoy es domingo
+            if (ahora.getDay() === 0) {
+                // Si ya pasaron las 12:00 PM de hoy, calculamos para el próximo domingo
+                if (ahora.getHours() >= 12) {
+                    diasHastaDomingo = 7;
+                }
+            }
+            
+            proximoDomingo.setDate(ahora.getDate() + diasHastaDomingo);
+            proximoDomingo.setHours(12, 0, 0, 0);
+            return proximoDomingo.getTime();
+        }
+
+        let tiempoObjetivo = calcularProximoDomingo();
+
+        function actualizarContador() {
+            const ahora = new Date().getTime();
+            const diferencia = tiempoObjetivo - ahora;
+
+            if (diferencia <= 0) {
+                // Si llega a cero, recalcula el próximo domingo
+                tiempoObjetivo = calcularProximoDomingo();
+                return;
+            }
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            document.getElementById('dias').innerText = dias < 10 ? '0' + dias : dias;
+            document.getElementById('horas').innerText = horas < 10 ? '0' + horas : horas;
+            document.getElementById('minutos').innerText = minutos < 10 ? '0' + minutos : minutos;
+            document.getElementById('segundos').innerText = segundos < 10 ? '0' + segundos : segundos;
+        }
+
+        setInterval(actualizarContador, 1000);
+        actualizarContador();
+    </script>
+
+    <!-- SCRIPT PARA ENVIAR DATOS E IMAGEN A DISCORD -->
+    <script>
+        document.getElementById('form-solicitud').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const robloxUser = document.getElementById('roblox_user').value;
+            const discordUser = document.getElementById('discord_user').value;
+            const loadout = document.getElementById('loadout').value;
+            const motivo = document.getElementById('motivo').value;
+            const photoInput = document.getElementById('rivals_photo');
+            const file = photoInput.files[0];
+
+            const webhookUrl = "https://discord.com/api/webhooks/1550923393430200422/u7zfE88nFwZGxyCAcgmIsZjkodiCXo6zr6mSTwmFzN_sfjHgdnrXEe8vDARcXWGJ913A";
+
+            const formData = new FormData();
+
+            if (file) {
+                formData.append('files[0]', file, file.name);
+            }
+
+            const payload = {
+                "embeds": [{
+                    "title": "🚨 Nueva Solicitud de Ingreso GPX",
+                    "description": "Un nuevo jugador adjuntó su captura de Rivals.",
+                    "color": 11010303,
+                    "fields": [
+                        { "name": "🎮 Usuario Roblox", "value": robloxUser, "inline": true },
+                        { "name": "💬 Usuario Discord", "value": discordUser, "inline": true },
+                        { "name": "🔫 Loadout", "value": loadout, "inline": false },
+                        { "name": "📝 Motivo / Nivel", "value": motivo, "inline": false }
+                    ],
+                    "image": {
+                        "url": file ? `attachment://${file.name}` : null
+                    },
+                    "footer": {
+                        "text": "Sistema Automático GPX • Craneo Gaming"
+                    },
+                    "timestamp": new Date().toISOString()
+                }]
+            };
+
+            formData.append('payload_json', JSON.stringify(payload));
+
+            fetch(webhookUrl, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert("¡Éxito! Tu solicitud y tu captura fueron enviadas a los administradores de GPX.");
+                    document.getElementById('form-solicitud').reset();
+                } else {
+                    alert("Error al enviar la solicitud.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Error de conexión. Intenta de nuevo.");
+            });
+        });
+    </script>
+</body>
+</html>
